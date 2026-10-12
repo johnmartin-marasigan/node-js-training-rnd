@@ -2,24 +2,23 @@
 
 > My filled-in version of [`write-up-template.md`](./write-up-template.md). My M01 **submission
 > deliverables are documentation**: the Nexus EPAV-generated learning materials
-> ([`learning-materials.md`](./learning-materials.md)) and this module write-up. The original lab's
-> hands-on Git exercises are treated here as **educational concepts and supplementary evidence**, not
-> as completion requirements. Where evidence is incomplete, this document says so rather than implying
-> completion.
+> ([`learning-materials.md`](./learning-materials.md)) and this module write-up, committed directly to
+> `main` in this repository. The original lab's hands-on Git exercises are treated here as
+> **educational concepts**, not as completion requirements. Where evidence is incomplete, this
+> document says so rather than implying completion.
 
-**Documentation deliverables (submission scope):**
+**Submission deliverables:**
 - `learning-materials.md` — the Nexus EPAV-generated educational guide for M01.
 - `write-up.md` — this reflection.
 
-**Supplementary implementation evidence (outside submission scope):**
-- Repository: https://github.com/johnmartin-marasigan/node-js-training-implementation
-- Pull request: https://github.com/johnmartin-marasigan/node-js-training-implementation/pull/1
-- Branch: `feat/m01-hello-node` · PR #1 state: **Draft — not merged, 0 reviews**.
+No separate feature branch, pull request, PR review, or merge is required for this submission: the M01
+work is committed directly to `main` in `node-js-training-rnd`.
 
 ## What I built
 
 My M01 work produced **two documentation artifacts**, generated through the Nexus EPAV workflow
-(Evaluate → Plan → Apply → Validate). The hands-on repository is kept as supplementary evidence.
+(Evaluate → Plan → Apply → Validate) and committed directly to `main` in this repository. No feature
+branch, pull request, or merge was part of the submission.
 
 **Primary deliverables:**
 
@@ -32,31 +31,14 @@ My M01 work produced **two documentation artifacts**, generated through the Nexu
 - **`write-up.md`** — this reflection on what I learned, the decisions behind the documentation, and
   the EPAV workflow that produced it.
 
-**Supplementary implementation evidence (described, not a completion target):**
-
-The repository `node-js-training-implementation` holds the M01 environment on branch
-`feat/m01-hello-node`:
-
-- **`hello-node.js`** — commit `0c13774` (`feat: add hello-node script`).
-- **`.nvmrc`** — pins Node.js 24, commit `6f34b4f` (`chore: configure Node.js 24 version`).
-- **`.gitignore`** and **`.env.example`** — commit `628bef3`
-  (`chore: add Git ignore rules and environment template`).
-- **PR #1** — opened from `feat/m01-hello-node` into `main`, carrying four Conventional Commits
-  (the three setup/script commits above plus `98eb2e2`, `docs: add M01 training write-up`).
-
-Its current status: PR #1 is a **Draft** with **no reviews**, so it is **not merged**; the branch
-history shows **no merge conflict**. These facts are recorded as-is; they are supplementary evidence,
-not deliverables of this submission.
-
 ## Why it's built this way (key decisions)
 
 **Scope decision — documentation over exercise completion.** The M01 objective for this submission is
 to produce comprehensive learning materials and a completed write-up, so I scoped the deliverables to
 those two documents. The lab in `brief.md` frames a practical Git exercise (branch → PR → merge with a
 planted conflict); rather than treating that exercise as the finish line, I used its subject matter as
-the content of the learning materials and kept the real repository/PR as supporting evidence. This
-keeps the submission focused on knowledge development while staying honest about what the repository
-does and does not contain.
+the content of the learning materials. This keeps the submission focused on knowledge development
+while staying honest about what the exercise did and did not include.
 
 **Why the write-up is the teaching artifact.** Per the program's README, each stage's write-up *is*
 the teaching content for the next cohort, and it should be written as the work happens. That is why
@@ -67,8 +49,9 @@ the learning materials and this write-up — not a finished exercise — are the
   rules, and the architecture doc before planning, so the documentation matched the module's intent.
 - *Plan before Apply:* the plan fixed the filenames, the section outlines, and validation criteria
   before any file was written.
-- *Apply without fabricating:* the write-up uses real repository/PR facts where known and explicit
-  pending markers otherwise. No merged PR, review, or conflict resolution is claimed.
+- *Apply without fabricating:* the write-up uses verified facts where known and explicit pending
+  markers otherwise. No merged PR, review, or conflict resolution is claimed, because the submission
+  was committed directly to `main` and required none.
 - *Preserve the originals:* `brief.md`, `tasks.md`, and `write-up-template.md` were left untouched;
   the deliverables are separate files in the M01 directory.
 
@@ -106,9 +89,8 @@ A guide to producing the M01 documentation deliverables with the Nexus EPAV work
 the everyday Git workflow, so the learning materials explain it as background:
 
 - A **branch** is a movable pointer to a commit; work happens on a feature branch so `main` stays
-  stable. In my repository this is `feat/m01-hello-node`.
-- A **pull request** proposes merging one branch into another and is where review occurs; mine is
-  PR #1.
+  stable.
+- A **pull request** proposes merging one branch into another and is where review occurs.
 - A **merge conflict** happens when two branches change the same lines; Git inserts
   `<<<<<<<` / `=======` / `>>>>>>>` markers that a human resolves by deciding the intended result, not
   by mechanically picking a side.
@@ -150,8 +132,8 @@ module's Git topic and the workflow later modules and the capstone assume.
 **Factual observations from producing the deliverables:**
 - The primary effort was documentation quality, not command execution: the harder problem was
   deciding what belonged in the learning materials versus the write-up.
-- The repository carries four Conventional Commits, one more than the brief's "3 or more" because a
-  `docs:` commit (`98eb2e2`) records the write-up alongside the three setup/script commits.
+- The M01 work was committed directly to `main`, so there was no branch/PR cycle to exercise for this
+  submission; that workflow is explained conceptually in the learning materials instead.
 - The write-up template's reflection sections ("What tripped me up", "What I'd do differently") are
   inherently personal; mechanical details are documented, but genuine personal reflection still needs
   my own input (see below).
@@ -163,7 +145,8 @@ module's Git topic and the workflow later modules and the capstone assume.
 ## Checkpoint evidence
 
 Two distinct sets: my **documentation deliverables** (this submission's scope) and the **original lab
-checkpoints** from `brief.md` (retained as supplementary evidence, not completion requirements).
+checkpoints** from `brief.md` (which the lab frames around a PR/merge workflow that this main-branch
+submission did not use, so they are not claimed as complete).
 
 **A. Documentation deliverables (submission scope):**
 
@@ -174,14 +157,18 @@ checkpoints** from `brief.md` (retained as supplementary evidence, not completio
 | Original module files preserved | **Complete** | `brief.md`, `tasks.md`, `write-up-template.md` unchanged |
 | No fabricated exercises/PR/verification | **Complete** | Pending items marked explicitly |
 
-**B. Original M01 lab checkpoints (supplementary evidence — not claimed as complete):**
+**B. Original M01 lab checkpoints (out of scope for this submission — not claimed as complete):**
 
-| Lab checkpoint | Status | Evidence |
+This submission was committed directly to `main`; it produced no feature branch, pull request, or
+merge, so the lab's PR-based checkpoints are out of scope here and are not claimed. Their subject
+matter is covered as concepts in `learning-materials.md`.
+
+| Lab checkpoint | Status | Note |
 | --- | --- | --- |
-| Merged PR with 3+ Conventional Commits | **Not met — PR #1 is a Draft, not merged** | PR #1: four typed commits (`6f34b4f`, `628bef3`, `0c13774`, `98eb2e2`) |
-| Resolved merge conflict in history | **Not evidenced** | No merge or conflict-resolution commit on `feat/m01-hello-node` |
-| `.gitignore` covering the Node list | **Present** | Commit `628bef3` |
-| `.env.example` present | **Present** | Commit `628bef3` |
+| Merged PR with 3+ Conventional Commits | **Out of scope** | No PR is part of this main-branch submission |
+| Resolved merge conflict in history | **Out of scope** | Conflict resolution is explained as a concept, not exercised |
+| `.gitignore` covering the Node list | **Present (partial)** | Root `.gitignore`: `node_modules`, `dist`, `coverage`, `*.db`, `.env`; no Prisma-client entry |
+| `.env.example` present | **Not present** | No config/secrets to template in this submission |
 | `revert` vs `reset` explained | **Written** | Concepts section, item 2 |
 
 **Revert vs reset, in my own words:** `revert` is additive — it adds a new commit that undoes a
@@ -202,6 +189,3 @@ back and drops commits, so it rewrites history and is safe only locally before p
 - Would I have written the learning materials in a different order (toolchain first vs concepts
   first)?
 - Which section would I expand for the next cohort?
-
-**Note on the supplementary repository:** its PR #1 remains a Draft and is not needed to satisfy this
-submission's deliverables; it is kept as supporting evidence of the underlying M01 environment.
